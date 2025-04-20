@@ -15,7 +15,7 @@ public class Produto {
         this.codigo = Produto.contador;
         this.nome = nome;
         this.preco = preco;
-        Produto.contador += 1;
+        Produto.contador++;
     }
 
     public int getCodigo() {
@@ -40,10 +40,8 @@ public class Produto {
 
     @Override
     public String toString() {
-        return "Produto{" +
-                "codigo=" + this.getCodigo() +
-                ", nome='" + this.getNome() + '\'' +
-                ", Preco=" + Utils.doubleParaString(this.getPreco()) +
-                '}';
+        return    "codigo= " + this.getCodigo() +
+                ", nome= '" + this.getNome() + '\'' +
+                ", Preco= " + Utils.doubleParaString(this.getPreco());
     }
 }
